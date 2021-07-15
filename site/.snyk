@@ -1,0 +1,34 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - hexo-s3-deploy > level > leveldown > prebuild > node-gyp > request > hawk:
+        patched: '2021-07-15T20:30:31.211Z'
+    - hexo-s3-deploy > level > leveldown > prebuild > node-ninja > request > hawk:
+        patched: '2021-07-15T20:30:31.211Z'
+  'npm:http-signature:20150122':
+    - hexo-s3-deploy > level > leveldown > prebuild > node-gyp > request > http-signature:
+        patched: '2021-07-15T20:30:31.211Z'
+    - hexo-s3-deploy > level > leveldown > prebuild > node-ninja > request > http-signature:
+        patched: '2021-07-15T20:30:31.211Z'
+  'npm:mime:20170907':
+    - hexo-s3-deploy > s3-sync > mime:
+        patched: '2021-07-15T20:30:31.211Z'
+    - hexo-s3-deploy > s3-sync > knox > mime:
+        patched: '2021-07-15T20:30:31.211Z'
+    - hexo-s3-deploy > level > leveldown > prebuild > node-gyp > request > form-data > mime:
+        patched: '2021-07-15T20:30:31.211Z'
+    - hexo-s3-deploy > level > leveldown > prebuild > node-ninja > request > form-data > mime:
+        patched: '2021-07-15T20:30:31.211Z'
+  'npm:request:20160119':
+    - hexo-s3-deploy > level > leveldown > prebuild > node-gyp > request:
+        patched: '2021-07-15T20:30:31.211Z'
+    - hexo-s3-deploy > level > leveldown > prebuild > node-ninja > request:
+        patched: '2021-07-15T20:30:31.211Z'
+  'npm:tunnel-agent:20170305':
+    - hexo-s3-deploy > level > leveldown > prebuild > node-gyp > request > tunnel-agent:
+        patched: '2021-07-15T20:30:31.211Z'
+    - hexo-s3-deploy > level > leveldown > prebuild > node-ninja > request > tunnel-agent:
+        patched: '2021-07-15T20:30:31.211Z'
